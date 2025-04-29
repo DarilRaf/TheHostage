@@ -43,13 +43,13 @@ color = Color(1, 1, 1, 0)
 [node name="Slider_Button" parent="GridContainer/ColorRect2" instance=ExtResource("1_l54mx")]
 position = Vector2(-180, 68)
 
-[node name="TextureProgressBar" parent="GridContainer/ColorRect2/Slider_Button/Control" index="3"]
+[node name="TextureProgressBar" parent="GridContainer/ColorRect2/Slider_Button/Control" index="0"]
 value = 20.0
 texture_under = ExtResource("2_pkso1")
 texture_progress = ExtResource("3_bsica")
 
-[node name="Button" parent="GridContainer/ColorRect2/Slider_Button/Control" index="4"]
-position = Vector2(-2, 207)
+[node name="Button" parent="GridContainer/ColorRect2/Slider_Button/Control" index="3"]
+position = Vector2(2, 233)
 
 [node name="ButtonPic" parent="GridContainer/ColorRect2/Slider_Button/Control/Button" index="0"]
 texture = ExtResource("4_jif2q")
@@ -62,13 +62,13 @@ color = Color(1, 1, 1, 0)
 [node name="Slider_Button" parent="GridContainer/ColorRect3" instance=ExtResource("1_l54mx")]
 position = Vector2(-180, 68)
 
-[node name="TextureProgressBar" parent="GridContainer/ColorRect3/Slider_Button/Control" index="3"]
+[node name="TextureProgressBar" parent="GridContainer/ColorRect3/Slider_Button/Control" index="0"]
 value = 50.0
 texture_under = ExtResource("5_qnt8i")
 texture_progress = ExtResource("6_jhxgy")
 
-[node name="Button" parent="GridContainer/ColorRect3/Slider_Button/Control" index="4"]
-position = Vector2(-4, 82)
+[node name="Button" parent="GridContainer/ColorRect3/Slider_Button/Control" index="3"]
+position = Vector2(-2, 147)
 
 [node name="ButtonPic" parent="GridContainer/ColorRect3/Slider_Button/Control/Button" index="0"]
 texture = ExtResource("7_h1rjv")
@@ -81,12 +81,12 @@ color = Color(1, 1, 1, 0)
 [node name="Slider_Button" parent="GridContainer/ColorRect4" instance=ExtResource("1_l54mx")]
 position = Vector2(-180, 68)
 
-[node name="TextureProgressBar" parent="GridContainer/ColorRect4/Slider_Button/Control" index="3"]
+[node name="TextureProgressBar" parent="GridContainer/ColorRect4/Slider_Button/Control" index="0"]
 value = 100.0
 texture_under = ExtResource("8_qmw75")
 texture_progress = ExtResource("9_86yui")
 
-[node name="Button" parent="GridContainer/ColorRect4/Slider_Button/Control" index="4"]
+[node name="Button" parent="GridContainer/ColorRect4/Slider_Button/Control" index="3"]
 position = Vector2(-2, -59)
 
 [node name="ButtonPic" parent="GridContainer/ColorRect4/Slider_Button/Control/Button" index="0"]
@@ -100,13 +100,13 @@ color = Color(1, 1, 1, 0)
 [node name="Slider_Button" parent="GridContainer/ColorRect5" instance=ExtResource("1_l54mx")]
 position = Vector2(-180, 68)
 
-[node name="TextureProgressBar" parent="GridContainer/ColorRect5/Slider_Button/Control" index="3"]
+[node name="TextureProgressBar" parent="GridContainer/ColorRect5/Slider_Button/Control" index="0"]
 value = 65.0
 texture_under = ExtResource("11_6ligo")
 texture_progress = ExtResource("12_jo2mt")
 
-[node name="Button" parent="GridContainer/ColorRect5/Slider_Button/Control" index="4"]
-position = Vector2(-2, 30)
+[node name="Button" parent="GridContainer/ColorRect5/Slider_Button/Control" index="3"]
+position = Vector2(3, 80)
 
 [node name="ButtonPic" parent="GridContainer/ColorRect5/Slider_Button/Control/Button" index="0"]
 texture = ExtResource("10_d20a8")
