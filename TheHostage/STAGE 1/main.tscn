@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bbmh0scgtd4rg"]
 
 [ext_resource type="PackedScene" uid="uid://b1a2vwl1qsomc" path="res://assets/The Hostage - main game/3D/House.fbx" id="1_07ni3"]
-[ext_resource type="PackedScene" uid="uid://dff2jbag28lnf" path="res://The Hostage - main game/Player.tscn" id="2_cbcfq"]
+[ext_resource type="PackedScene" uid="uid://dff2jbag28lnf" path="res://TheHostage/Player.tscn" id="2_cbcfq"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_eu0de"]
 size = Vector3(2.69347, 0.0636444, 1.80563)
