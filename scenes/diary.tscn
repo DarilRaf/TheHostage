@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dw5nltk16bret"]
+[gd_scene load_steps=9 format=3 uid="uid://dw5nltk16bret"]
 
 [ext_resource type="Texture2D" uid="uid://cewg1ny5a1guv" path="res://assets/The Hostage - main game/2D/diary/inside cover.png" id="1_bkw6d"]
 [ext_resource type="Texture2D" uid="uid://ds7l1l7sk3yom" path="res://assets/The Hostage - main game/2D/diary/page left.png" id="2_1txt3"]
@@ -24,6 +24,9 @@ animations = [{
 "name": &"default",
 "speed": 5.0
 }]
+
+[sub_resource type="LabelSettings" id="LabelSettings_6pjbb"]
+font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_qv663"]
 animations = [{
@@ -120,6 +123,7 @@ grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "A placeholder text.
 "
+label_settings = SubResource("LabelSettings_6pjbb")
 
 [node name="ColorRect2" type="ColorRect" parent="GridContainer"]
 custom_minimum_size = Vector2(225, 350)

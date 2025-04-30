@@ -12,42 +12,47 @@ radius = 66.6108
 
 [node name="Slider_Button" type="Node2D"]
 
-[node name="SliderOuterBase" type="Sprite2D" parent="."]
-position = Vector2(275, 315)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_g2ib2")
-
 [node name="Control" type="Node2D" parent="."]
 
+[node name="SliderOuterBase" type="Sprite2D" parent="Control"]
+position = Vector2(326, 324)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_g2ib2")
+
 [node name="TextureProgressBar" type="TextureProgressBar" parent="Control"]
-offset_left = 4.0
-offset_top = 50.0
-offset_right = 1084.0
-offset_bottom = 1130.0
-scale = Vector2(0.5, 0.5)
+modulate = Color(0.941176, 1, 1, 1)
+offset_left = 3.0
+offset_top = 10.0
+offset_right = 1083.0
+offset_bottom = 1090.0
+scale = Vector2(0.6, 0.6)
 value = 70.0
 fill_mode = 3
 texture_under = ExtResource("3_omiys")
 texture_progress = ExtResource("4_owdim")
+metadata/_edit_use_anchors_ = true
 
-[node name="SliderShadowExpandable" type="Sprite2D" parent="Control"]
-position = Vector2(275, 280)
-scale = Vector2(0.6, 0.6)
-texture = ExtResource("2_imdxv")
+[node name="Node2D" type="Node2D" parent="Control"]
+scale = Vector2(1.1, 1.1)
 
-[node name="SliderShadowBase" type="Sprite2D" parent="Control"]
-position = Vector2(275, 280)
+[node name="SliderShadowBase" type="Sprite2D" parent="Control/Node2D"]
+position = Vector2(295.455, 276.364)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_33jcn")
+
+[node name="SliderShadowExpandable" type="Sprite2D" parent="Control/Node2D"]
+position = Vector2(296.364, 280.909)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_imdxv")
 
 [node name="Button" type="Area2D" parent="Control"]
 position = Vector2(-1, 73)
 
 [node name="ButtonPic" type="Sprite2D" parent="Control/Button"]
-position = Vector2(281, 139)
+position = Vector2(330, 159)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("6_tycsd")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Control/Button"]
-position = Vector2(279, 138)
+position = Vector2(329, 157)
 shape = SubResource("CircleShape2D_nq7u0")

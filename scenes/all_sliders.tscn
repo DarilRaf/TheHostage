@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://dhl07ttwot2mo"]
+[gd_scene load_steps=15 format=3 uid="uid://dhl07ttwot2mo"]
 
 [ext_resource type="PackedScene" uid="uid://b7l7v2bbw4w7e" path="res://scenes/slider_button.tscn" id="1_l54mx"]
 [ext_resource type="Texture2D" uid="uid://bkqr6sde8pxd4" path="res://assets/The Hostage - main game/2D/slider_components/slider/Light Blue/slider_base_ curved_LightBlue.png" id="2_pkso1"]
@@ -12,6 +12,8 @@
 [ext_resource type="Texture2D" uid="uid://dugydhpcxkmie" path="res://assets/The Hostage - main game/2D/slider_components/button/button_Purple.png" id="10_d20a8"]
 [ext_resource type="Texture2D" uid="uid://dhl6tptvbkwyv" path="res://assets/The Hostage - main game/2D/slider_components/slider/Red/slider_base_curved_Red.png" id="11_6ligo"]
 [ext_resource type="Texture2D" uid="uid://crrjdn17hg2ov" path="res://assets/The Hostage - main game/2D/slider_components/slider/Red/slider_expandable_Red.png" id="12_jo2mt"]
+[ext_resource type="Texture2D" uid="uid://kwwah2suhhcq" path="res://assets/The Hostage - main game/2D/slider_components/slider/Blue/slider_base_ curved_Blue.png" id="13_t7o2h"]
+[ext_resource type="Texture2D" uid="uid://duv3v7ee3sge8" path="res://assets/The Hostage - main game/2D/slider_components/slider/Blue/slider_expandable_Blue.png" id="14_olbsy"]
 
 [node name="All Sliders" type="Control"]
 layout_mode = 3
@@ -43,7 +45,7 @@ color = Color(1, 1, 1, 0)
 [node name="Slider_Button" parent="GridContainer/ColorRect2" instance=ExtResource("1_l54mx")]
 position = Vector2(-180, 68)
 
-[node name="TextureProgressBar" parent="GridContainer/ColorRect2/Slider_Button/Control" index="0"]
+[node name="TextureProgressBar" parent="GridContainer/ColorRect2/Slider_Button/Control" index="1"]
 value = 20.0
 texture_under = ExtResource("2_pkso1")
 texture_progress = ExtResource("3_bsica")
@@ -62,7 +64,7 @@ color = Color(1, 1, 1, 0)
 [node name="Slider_Button" parent="GridContainer/ColorRect3" instance=ExtResource("1_l54mx")]
 position = Vector2(-180, 68)
 
-[node name="TextureProgressBar" parent="GridContainer/ColorRect3/Slider_Button/Control" index="0"]
+[node name="TextureProgressBar" parent="GridContainer/ColorRect3/Slider_Button/Control" index="1"]
 value = 50.0
 texture_under = ExtResource("5_qnt8i")
 texture_progress = ExtResource("6_jhxgy")
@@ -81,7 +83,7 @@ color = Color(1, 1, 1, 0)
 [node name="Slider_Button" parent="GridContainer/ColorRect4" instance=ExtResource("1_l54mx")]
 position = Vector2(-180, 68)
 
-[node name="TextureProgressBar" parent="GridContainer/ColorRect4/Slider_Button/Control" index="0"]
+[node name="TextureProgressBar" parent="GridContainer/ColorRect4/Slider_Button/Control" index="1"]
 value = 100.0
 texture_under = ExtResource("8_qmw75")
 texture_progress = ExtResource("9_86yui")
@@ -100,7 +102,7 @@ color = Color(1, 1, 1, 0)
 [node name="Slider_Button" parent="GridContainer/ColorRect5" instance=ExtResource("1_l54mx")]
 position = Vector2(-180, 68)
 
-[node name="TextureProgressBar" parent="GridContainer/ColorRect5/Slider_Button/Control" index="0"]
+[node name="TextureProgressBar" parent="GridContainer/ColorRect5/Slider_Button/Control" index="1"]
 value = 65.0
 texture_under = ExtResource("11_6ligo")
 texture_progress = ExtResource("12_jo2mt")
@@ -111,8 +113,28 @@ position = Vector2(3, 80)
 [node name="ButtonPic" parent="GridContainer/ColorRect5/Slider_Button/Control/Button" index="0"]
 texture = ExtResource("10_d20a8")
 
+[node name="ColorRect6" type="ColorRect" parent="GridContainer"]
+custom_minimum_size = Vector2(200, 650)
+layout_mode = 2
+color = Color(1, 1, 1, 0)
+
+[node name="Slider_Button" parent="GridContainer/ColorRect6" instance=ExtResource("1_l54mx")]
+position = Vector2(-180, 68)
+
+[node name="TextureProgressBar" parent="GridContainer/ColorRect6/Slider_Button/Control" index="1"]
+value = 75.0
+texture_under = ExtResource("13_t7o2h")
+texture_progress = ExtResource("14_olbsy")
+
+[node name="Button" parent="GridContainer/ColorRect6/Slider_Button/Control" index="3"]
+position = Vector2(3, 80)
+
+[node name="ButtonPic" parent="GridContainer/ColorRect6/Slider_Button/Control/Button" index="0"]
+texture = ExtResource("10_d20a8")
+
 [editable path="GridContainer/ColorRect/Slider_Button"]
 [editable path="GridContainer/ColorRect2/Slider_Button"]
 [editable path="GridContainer/ColorRect3/Slider_Button"]
 [editable path="GridContainer/ColorRect4/Slider_Button"]
 [editable path="GridContainer/ColorRect5/Slider_Button"]
+[editable path="GridContainer/ColorRect6/Slider_Button"]
