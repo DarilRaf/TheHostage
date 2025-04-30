@@ -29,12 +29,9 @@ animations = [{
 
 [node name="Trauma_Constraint" type="Control"]
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+anchors_preset = 0
 size_flags_horizontal = 4
+size_flags_vertical = 4
 
 [node name="ColorRect" type="ColorRect" parent="."]
 custom_minimum_size = Vector2(1280, 720)
@@ -44,7 +41,7 @@ offset_bottom = 720.0
 color = Color(1, 1, 1, 0)
 
 [node name="TraumaSprite" type="AnimatedSprite2D" parent="ColorRect"]
-position = Vector2(741, 405)
-scale = Vector2(0.75, 0.75)
+modulate = Color(0.986752, 0.986752, 0.986752, 1)
+position = Vector2(990, 536)
 sprite_frames = SubResource("SpriteFrames_avaxa")
-animation = &"low_trauma"
+animation = &"high_trauma"
