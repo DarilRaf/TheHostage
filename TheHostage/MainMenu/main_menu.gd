@@ -9,6 +9,9 @@ var current_bg_index: int = 0
 var bg_timer: float = 0.0
 var bg_change_interval: float = 3.0
 
+func _ready() -> void:
+	AudioPlayer.play_bgm_menu()
+
 func _process(delta):
 	# Update timer
 	bg_timer += delta
@@ -36,8 +39,8 @@ func _on_exit_button_pressed() -> void:
 
 
 func _on_start_button_mouse_entered() -> void:
-	hover_sound.play()
+	AudioPlayer.play_sfx_hover()
 
 
 func _on_exit_button_mouse_entered() -> void:
-	hover_sound.play()
+	AudioPlayer.play_sfx_hover()
