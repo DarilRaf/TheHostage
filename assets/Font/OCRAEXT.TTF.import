@@ -2,7 +2,7 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://bvhuwvbqc8ko8"
+uid="uid://c636clsm5w5mc"
 path="res://.godot/imported/OCRAEXT.TTF-4a7e56991a08104b88eb073198b38716.fontdata"
 
 [deps]
@@ -22,7 +22,8 @@ msdf_size=48
 allow_system_fallback=true
 force_autohinter=false
 hinting=1
-subpixel_positioning=1
+subpixel_positioning=4
+keep_rounding_remainders=true
 oversampling=0.0
 Fallbacks=null
 fallbacks=[]
