@@ -2,11 +2,15 @@ extends Control
 
 @export var backgrounds: Array[Texture2D] = []
 @onready var background: TextureRect = $Background
+@onready var hover_sound: AudioStreamPlayer = $Sounds/HoverSound
 
 # Variables for background cycling
 var current_bg_index: int = 0
 var bg_timer: float = 0.0
 var bg_change_interval: float = 3.0
+
+func _ready() -> void:
+	AudioPlayer.play_bgm_menu()
 
 func _process(delta):
 	# Update timer
@@ -32,3 +36,11 @@ func _on_start_button_pressed() -> void:
 	
 func _on_exit_button_pressed() -> void:
 	get_tree().quit()
+
+
+func _on_start_button_mouse_entered() -> void:
+	AudioPlayer.play_sfx_hover()
+
+
+func _on_exit_button_mouse_entered() -> void:
+	AudioPlayer.play_sfx_hover()

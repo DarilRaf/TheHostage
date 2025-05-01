@@ -95,5 +95,7 @@ size_flags_horizontal = 4
 texture_normal = ExtResource("5_grxmk")
 texture_hover = ExtResource("6_uedcc")
 
+[connection signal="mouse_entered" from="ButtonContainer/StartButton" to="." method="_on_start_button_mouse_entered"]
 [connection signal="pressed" from="ButtonContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="mouse_entered" from="ButtonContainer/ExitButton" to="." method="_on_exit_button_mouse_entered"]
 [connection signal="pressed" from="ButtonContainer/ExitButton" to="." method="_on_exit_button_pressed"]
