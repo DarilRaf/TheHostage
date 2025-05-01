@@ -161,9 +161,30 @@ theme_override_fonts/font = ExtResource("2_jn18d")
 theme_override_font_sizes/font_size = 32
 text = "CHOOSE WHICH HOSTAGE YOU WANT TO SAVE TODAY"
 
+[node name="Buttons" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="Buttons"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 86.0
+offset_bottom = 54.0
+theme_override_colors/font_color = Color(0.728822, 0.728822, 0.728822, 1)
+theme_override_fonts/font = ExtResource("2_jn18d")
+theme_override_font_sizes/font_size = 28
+text = "Back"
+
 [connection signal="mouse_entered" from="Hostages/Hostage1" to="." method="_on_hostage_1_mouse_entered"]
 [connection signal="mouse_exited" from="Hostages/Hostage1" to="." method="_on_hostage_1_mouse_exited"]
+[connection signal="pressed" from="Hostages/Hostage1" to="." method="_on_hostage_pressed"]
 [connection signal="mouse_entered" from="Hostages/Hostage2" to="." method="_on_hostage_2_mouse_entered"]
 [connection signal="mouse_exited" from="Hostages/Hostage2" to="." method="_on_hostage_2_mouse_exited"]
+[connection signal="pressed" from="Hostages/Hostage2" to="." method="_on_hostage_pressed"]
 [connection signal="mouse_entered" from="Hostages/Hostage3" to="." method="_on_hostage_3_mouse_entered"]
 [connection signal="mouse_exited" from="Hostages/Hostage3" to="." method="_on_hostage_3_mouse_exited"]
+[connection signal="pressed" from="Hostages/Hostage3" to="." method="_on_hostage_pressed"]
+[connection signal="mouse_entered" from="Buttons/Button" to="." method="_on_button_mouse_entered"]
+[connection signal="pressed" from="Buttons/Button" to="." method="_on_button_pressed"]

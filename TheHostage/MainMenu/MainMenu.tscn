@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://b7hipxaoh3slu"]
+[gd_scene load_steps=18 format=3 uid="uid://b7hipxaoh3slu"]
 
 [ext_resource type="Texture2D" uid="uid://bt85f6agm88gc" path="res://assets/The Hostage - main game/main menu/BG7.jpg" id="1_ir7by"]
 [ext_resource type="Script" uid="uid://buexnjflfnosr" path="res://TheHostage/MainMenu/main_menu.gd" id="1_xpqc3"]
@@ -15,8 +15,6 @@
 [ext_resource type="Texture2D" uid="uid://lv8qjc0qm8o3" path="res://assets/The Hostage - main game/main menu/BG6.jpg" id="7_8lrho"]
 [ext_resource type="Shader" uid="uid://cjntkchb0vew7" path="res://TheHostage/MainMenu/glitch.gdshader" id="8_ghmub"]
 [ext_resource type="Texture2D" uid="uid://dhubdres0mnwk" path="res://assets/The Hostage - main game/main menu/BG8.jpg" id="9_mes8o"]
-[ext_resource type="AudioStream" uid="uid://cpexcdf1b4cg5" path="res://assets/Sounds/Background/MainMenuBGM.mp3" id="16_7vnfw"]
-[ext_resource type="AudioStream" uid="uid://cbebxjus0ojkt" path="res://assets/Sounds/SFX/Hover.wav" id="17_12bdq"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_gl4k5"]
 
@@ -96,15 +94,6 @@ layout_mode = 2
 size_flags_horizontal = 4
 texture_normal = ExtResource("5_grxmk")
 texture_hover = ExtResource("6_uedcc")
-
-[node name="Sounds" type="Node" parent="."]
-
-[node name="BackgroundMusic" type="AudioStreamPlayer" parent="Sounds"]
-stream = ExtResource("16_7vnfw")
-autoplay = true
-
-[node name="HoverSound" type="AudioStreamPlayer" parent="Sounds"]
-stream = ExtResource("17_12bdq")
 
 [connection signal="mouse_entered" from="ButtonContainer/StartButton" to="." method="_on_start_button_mouse_entered"]
 [connection signal="pressed" from="ButtonContainer/StartButton" to="." method="_on_start_button_pressed"]
