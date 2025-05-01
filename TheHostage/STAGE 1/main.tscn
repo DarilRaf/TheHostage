@@ -1,20 +1,33 @@
-[gd_scene load_steps=5 format=3 uid="uid://cqeuxvexway52"]
+[gd_scene load_steps=8 format=3 uid="uid://cqeuxvexway52"]
 
 [ext_resource type="PackedScene" uid="uid://famlapdxxy3n" path="res://assets/The Hostage - main game/STAGE 1/3D assets/Room/roof.fbx" id="2_hy516"]
 [ext_resource type="PackedScene" uid="uid://cc0nrk24387cp" path="res://assets/The Hostage - main game/STAGE 1/3D assets/Room/Room only.glb" id="2_v8gqm"]
 [ext_resource type="PackedScene" uid="uid://n4uus6hh1q6o" path="res://assets/The Hostage - main game/STAGE 1/3D assets/Room/tirai kiri.fbx" id="3_737jo"]
 [ext_resource type="PackedScene" uid="uid://bqm0561sl2gu3" path="res://assets/The Hostage - main game/STAGE 1/3D assets/Room/tirai kanan.fbx" id="4_b714i"]
+[ext_resource type="PackedScene" uid="uid://7334scod2ic4" path="res://assets/The Hostage - main game/STAGE 1/3D assets/Safebox.glb" id="5_b714i"]
+[ext_resource type="PackedScene" uid="uid://dkmcw1bnmm0wh" path="res://assets/The Hostage - main game/STAGE 1/3D assets/door lock.glb" id="6_8av70"]
+[ext_resource type="PackedScene" uid="uid://c4kqeqg5mdgbx" path="res://assets/The Hostage - main game/STAGE 1/3D assets/board/bulletin_board.glb" id="7_8av70"]
 
 [node name="Main" type="Node3D"]
 
 [node name="roof" parent="." instance=ExtResource("2_hy516")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.63369, 12.5373, 1.32194)
-visible = false
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0273713, 12.5373, 0.0864892)
 
-[node name="Room only" parent="." instance=ExtResource("2_v8gqm")]
+[node name="tirai" type="Node3D" parent="."]
 
-[node name="tirai kiri" parent="." instance=ExtResource("3_737jo")]
+[node name="tirai kiri" parent="tirai" instance=ExtResource("3_737jo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.057, -0.026, -7.426)
 
-[node name="tirai kanan" parent="." instance=ExtResource("4_b714i")]
+[node name="tirai kanan" parent="tirai" instance=ExtResource("4_b714i")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.03, 0.049, 7.34)
+
+[node name="Safebox" parent="." instance=ExtResource("5_b714i")]
+transform = Transform3D(-8, 0, -1.20797e-06, 0, 8, 0, 1.20797e-06, 0, -8, -0.168154, 8.03789, 14.012)
+
+[node name="kunci pintu" parent="." instance=ExtResource("6_8av70")]
+transform = Transform3D(-0.015, 0, -2.26494e-09, 0, 0.015, 0, 2.26494e-09, 0, -0.015, 12.9028, 7.81958, -9.78796)
+
+[node name="Room" parent="." instance=ExtResource("2_v8gqm")]
+
+[node name="Sketchfab_Scene2" parent="." instance=ExtResource("7_8av70")]
+transform = Transform3D(-2.62268e-07, 0, 6, 0, 6, 0, -6, 0, -2.62268e-07, -14.4564, 9.05873, -4.56962)
