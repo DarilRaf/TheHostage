@@ -3,11 +3,12 @@
 [ext_resource type="Script" uid="uid://be83uxp2jgkcq" path="res://Globals/Interactable/game_object_transition_collition.gd" id="1_myjn2"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_q0hel"]
-size = Vector3(1.59393, 1.25696, 1)
+size = Vector3(38.149, 31.6549, 37.6559)
 
 [node name="GameObjectTransitionCollition" type="StaticBody3D"]
 script = ExtResource("1_myjn2")
 
 [node name="InteractableZone" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.2775, 15.199, 18.3279)
 shape = SubResource("BoxShape3D_q0hel")
 debug_color = Color(1, 0.556863, 0.901961, 1)

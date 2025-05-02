@@ -51,8 +51,8 @@ transform = Transform3D(-8, 0, -1.20797e-06, 0, 8, 0, 1.20797e-06, 0, -8, -0.168
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0.0436401, -0.378357, 0.0379947)
 shape = SubResource("BoxShape3D_gxrok")
 
-[node name="GameObjectTransitionCollition" parent="Safebox/Area3D" instance=ExtResource("5_tfrmh")]
-transform = Transform3D(0.0264126, 0, 0, 0, 0.0269558, 0, 4.44089e-16, 0, -0.0240513, 0.514251, -0.629898, 0.346518)
+[node name="GameObjectTransitionCollition" parent="Safebox/Area3D/CollisionShape3D" instance=ExtResource("5_tfrmh")]
+transform = Transform3D(0.00992372, 0, 1.11022e-16, 0, 0.0550142, 0, 0, 0, -0.00869416, -0.00673343, 0.0997238, 0.10659)
 scene = ExtResource("6_gx6gr")
 prompt_message = "Open Safe"
 
@@ -65,10 +65,8 @@ transform = Transform3D(-0.015, 0, -2.26494e-09, 0, 0.015, 0, 2.26494e-09, 0, -0
 transform = Transform3D(30, 0, 5.91172e-12, 0, 30, 0, -5.91172e-12, 0, 30, 16.2809, 29.7803, 10.1514)
 shape = SubResource("BoxShape3D_d1eib")
 
-[node name="GameObjectTransitionCollition" parent="DoorLock/Area3D" instance=ExtResource("5_tfrmh")]
-transform = Transform3D(5.88447, 0, 6.13909e-12, 0, 16.3652, 0, -2.6148e-12, 0, 16.1433, 29.7855, -138.627, -373.56)
-scene = ExtResource("6_gx6gr")
-prompt_message = "Open Door Lock"
+[node name="GameObjectTransitionCollition" parent="DoorLock/Area3D/CollisionShape3D" instance=ExtResource("5_tfrmh")]
+transform = Transform3D(0.0993845, 0, -2.04281e-14, 0, 0.160192, 0, 2.13163e-14, 0, 0.093854, -0.542696, -0.432371, 0.153843)
 
 [node name="RoomOnly" parent="." instance=ExtResource("7_tfrmh")]
 
@@ -112,13 +110,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -13.9536)
 transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, -0.947266, 9.72538, -9.35547)
 shape = SubResource("BoxShape3D_cmcob")
 
-[node name="RakBukuInteraction" parent="." instance=ExtResource("5_tfrmh")]
-transform = Transform3D(0.160117, 0, 0, 0, 0.726408, 0, 0, 0, 0.377007, -11.8238, 0, 1.77995)
-scene = ExtResource("6_gx6gr")
-
-[node name="JendelaInteraction" parent="." instance=ExtResource("5_tfrmh")]
-transform = Transform3D(0.0223752, 0, 0, 0, 1, 0, 0, 0, 0.264759, -14.2703, 0.19873, -20.8993)
-
 [node name="Board" parent="." instance=ExtResource("7_8av70")]
 transform = Transform3D(-2.62268e-07, 0, 6, 0, 6, 0, -6, 0, -2.62268e-07, -14.4564, 9.05873, -4.56962)
 
@@ -127,10 +118,6 @@ transform = Transform3D(-2.62268e-07, 0, 6, 0, 6, 0, -6, 0, -2.62268e-07, -14.45
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Board/Area3D"]
 transform = Transform3D(1, 0, 7.10543e-15, 0, 1, 0, -7.10543e-15, 0, 1, -5.96046e-08, 0, 0.888397)
 shape = SubResource("BoxShape3D_gx6gr")
-
-[node name="GameObjectTransitionCollition" parent="Board/Area3D" instance=ExtResource("5_tfrmh")]
-transform = Transform3D(0.0375138, 0, 1.11022e-15, 0, 0.0254109, 0, -1.9984e-15, 0, 0.0302534, 0.729184, 0.0230865, -0.270091)
-scene = ExtResource("6_gx6gr")
 
 [node name="Player" parent="." instance=ExtResource("8_cmcob")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.913, 9.29831, 0)
