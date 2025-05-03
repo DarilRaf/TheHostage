@@ -1,6 +1,7 @@
-[gd_scene load_steps=25 format=3 uid="uid://c544l05iff3y4"]
+[gd_scene load_steps=26 format=3 uid="uid://c544l05iff3y4"]
 
 [ext_resource type="Script" uid="uid://c3k50dxxcy6jm" path="res://TheHostage/MainMenu/ChooseHostage/choose_hostage.gd" id="1_srxst"]
+[ext_resource type="Texture2D" uid="uid://ddsjcmdlswlcp" path="res://assets/The Hostage - main game/choose the hostage/off .png" id="2_54vod"]
 [ext_resource type="Texture2D" uid="uid://ds21b7m4dnu5m" path="res://assets/The Hostage - main game/choose the hostage/on.png" id="2_ddokb"]
 [ext_resource type="FontFile" uid="uid://c636clsm5w5mc" path="res://assets/Font/OCRAEXT.TTF" id="2_jn18d"]
 [ext_resource type="Texture2D" uid="uid://ihcpdqfiaaj1" path="res://assets/The Hostage - main game/choose the hostage/animation text/1.png" id="3_q0qbp"]
@@ -21,7 +22,6 @@
 [ext_resource type="AudioStream" uid="uid://jxm4qksklpd5" path="res://assets/Sounds/SFX/Typing1.wav" id="19_0knme"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ddokb"]
-load_path = "res://.godot/imported/off .png-15018508fe6dce4f148038fd60c911aa.ctex"
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_dwods"]
 animations = [{
@@ -76,6 +76,33 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="Animation" id="Animation_2w6by"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("RichTextLabel:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TypewriterSFX:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
 [sub_resource type="Animation" id="Animation_54vod"]
 resource_name = "typewriter_1"
 length = 8.0
@@ -91,33 +118,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
 "update": 0,
 "values": [0.0, 0.166667, 0.166667, 0.481481, 0.481481, 0.748518, 1.0]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("TypewriterSFX:playing")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-
-[sub_resource type="Animation" id="Animation_2w6by"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("RichTextLabel:visible_ratio")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -176,7 +176,7 @@ alignment = 1
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-texture_normal = SubResource("CompressedTexture2D_ddokb")
+texture_normal = ExtResource("2_54vod")
 texture_pressed = SubResource("CompressedTexture2D_ddokb")
 texture_hover = ExtResource("2_ddokb")
 
@@ -188,7 +188,7 @@ animation = &"fuzzy"
 
 [node name="Hostage2" type="TextureButton" parent="Hostages"]
 layout_mode = 2
-texture_normal = SubResource("CompressedTexture2D_ddokb")
+texture_normal = ExtResource("2_54vod")
 texture_pressed = SubResource("CompressedTexture2D_ddokb")
 texture_hover = ExtResource("2_ddokb")
 
@@ -200,7 +200,7 @@ animation = &"fuzzy"
 
 [node name="Hostage3" type="TextureButton" parent="Hostages"]
 layout_mode = 2
-texture_normal = SubResource("CompressedTexture2D_ddokb")
+texture_normal = ExtResource("2_54vod")
 texture_pressed = SubResource("CompressedTexture2D_ddokb")
 texture_hover = ExtResource("2_ddokb")
 
@@ -241,6 +241,7 @@ theme_override_font_sizes/font_size = 28
 text = "Back"
 
 [node name="ColorRect" type="ColorRect" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
