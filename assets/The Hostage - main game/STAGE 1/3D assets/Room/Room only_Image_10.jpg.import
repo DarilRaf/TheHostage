@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://b3augp7he8wac"
+path.s3tc="res://.godot/imported/Room only_Image_10.jpg-d55dabd65da4f5e6c31e8ac19c504d24.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "f9e3b4f4d607ceeb4bccc16d9432e4fe"
+}
+
+[deps]
+
+source_file="res://assets/The Hostage - main game/STAGE 1/3D assets/Room/Room only_Image_10.jpg"
+dest_files=["res://.godot/imported/Room only_Image_10.jpg-d55dabd65da4f5e6c31e8ac19c504d24.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0
