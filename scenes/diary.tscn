@@ -1,10 +1,10 @@
 [gd_scene load_steps=9 format=3 uid="uid://dw5nltk16bret"]
 
-[ext_resource type="Texture2D" uid="uid://cewg1ny5a1guv" path="res://assets/The Hostage - main game/2D/diary/inside cover.png" id="1_bkw6d"]
-[ext_resource type="Texture2D" uid="uid://ds7l1l7sk3yom" path="res://assets/The Hostage - main game/2D/diary/page left.png" id="2_1txt3"]
-[ext_resource type="Texture2D" uid="uid://bdp15nilv0c54" path="res://assets/The Hostage - main game/2D/diary/page left_foldable.png" id="3_4wp0g"]
-[ext_resource type="Texture2D" uid="uid://bi4plxe6c0o0d" path="res://assets/The Hostage - main game/2D/diary/page right_foldable.png" id="4_vucli"]
-[ext_resource type="Texture2D" uid="uid://ck41b4noyh118" path="res://assets/The Hostage - main game/2D/diary/page right.png" id="5_onf5i"]
+[ext_resource type="Texture2D" uid="uid://cewg1ny5a1guv" path="res://assets/The Hostage - main game/2D/Diary/inside cover.png" id="1_bkw6d"]
+[ext_resource type="Texture2D" uid="uid://ds7l1l7sk3yom" path="res://assets/The Hostage - main game/2D/Diary/page left.png" id="2_1txt3"]
+[ext_resource type="Texture2D" uid="uid://bdp15nilv0c54" path="res://assets/The Hostage - main game/2D/Diary/page left_foldable.png" id="3_4wp0g"]
+[ext_resource type="Texture2D" uid="uid://bi4plxe6c0o0d" path="res://assets/The Hostage - main game/2D/Diary/page right_foldable.png" id="4_vucli"]
+[ext_resource type="Texture2D" uid="uid://ck41b4noyh118" path="res://assets/The Hostage - main game/2D/Diary/page right.png" id="5_onf5i"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_5tbqr"]
 animations = [{

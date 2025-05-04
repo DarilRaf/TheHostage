@@ -1,19 +1,19 @@
 [gd_scene load_steps=15 format=3 uid="uid://dhl07ttwot2mo"]
 
 [ext_resource type="PackedScene" uid="uid://b7l7v2bbw4w7e" path="res://scenes/slider_button.tscn" id="1_l54mx"]
-[ext_resource type="Texture2D" uid="uid://bkqr6sde8pxd4" path="res://assets/The Hostage - main game/2D/slider_components/slider/Light Blue/slider_base_ curved_LightBlue.png" id="2_pkso1"]
-[ext_resource type="Texture2D" uid="uid://dvqy23rqgba8i" path="res://assets/The Hostage - main game/2D/slider_components/slider/Light Blue/slider_expandable_LightBlue.png" id="3_bsica"]
-[ext_resource type="Texture2D" uid="uid://bvnq1vubybcna" path="res://assets/The Hostage - main game/2D/slider_components/button/button_Blue.png" id="4_jif2q"]
-[ext_resource type="Texture2D" uid="uid://2sjimkmbuk4a" path="res://assets/The Hostage - main game/2D/slider_components/slider/Green/slider_base_curved_Green.png" id="5_qnt8i"]
-[ext_resource type="Texture2D" uid="uid://fjrkcgtgi4g3" path="res://assets/The Hostage - main game/2D/slider_components/slider/Green/slider_expandable_Green.png" id="6_jhxgy"]
-[ext_resource type="Texture2D" uid="uid://cu7o0xu6vgvy3" path="res://assets/The Hostage - main game/2D/slider_components/button/button_Green.png" id="7_h1rjv"]
-[ext_resource type="Texture2D" uid="uid://bvfhiv7xt5hvd" path="res://assets/The Hostage - main game/2D/slider_components/slider/Purple/slider_base_curved_Purple.png" id="8_qmw75"]
-[ext_resource type="Texture2D" uid="uid://lh1oxb33qob8" path="res://assets/The Hostage - main game/2D/slider_components/slider/Purple/slider_expandable_Purple.png" id="9_86yui"]
-[ext_resource type="Texture2D" uid="uid://dugydhpcxkmie" path="res://assets/The Hostage - main game/2D/slider_components/button/button_Purple.png" id="10_d20a8"]
-[ext_resource type="Texture2D" uid="uid://dhl6tptvbkwyv" path="res://assets/The Hostage - main game/2D/slider_components/slider/Red/slider_base_curved_Red.png" id="11_6ligo"]
-[ext_resource type="Texture2D" uid="uid://crrjdn17hg2ov" path="res://assets/The Hostage - main game/2D/slider_components/slider/Red/slider_expandable_Red.png" id="12_jo2mt"]
-[ext_resource type="Texture2D" uid="uid://kwwah2suhhcq" path="res://assets/The Hostage - main game/2D/slider_components/slider/Blue/slider_base_ curved_Blue.png" id="13_t7o2h"]
-[ext_resource type="Texture2D" uid="uid://duv3v7ee3sge8" path="res://assets/The Hostage - main game/2D/slider_components/slider/Blue/slider_expandable_Blue.png" id="14_olbsy"]
+[ext_resource type="Texture2D" uid="uid://bkqr6sde8pxd4" path="res://assets/The Hostage - main game/2D/SliderComponents/slider/Light Blue/slider_base_ curved_LightBlue.png" id="2_pkso1"]
+[ext_resource type="Texture2D" uid="uid://dvqy23rqgba8i" path="res://assets/The Hostage - main game/2D/SliderComponents/slider/Light Blue/slider_expandable_LightBlue.png" id="3_bsica"]
+[ext_resource type="Texture2D" uid="uid://bvnq1vubybcna" path="res://assets/The Hostage - main game/2D/SliderComponents/button/button_Blue.png" id="4_jif2q"]
+[ext_resource type="Texture2D" uid="uid://2sjimkmbuk4a" path="res://assets/The Hostage - main game/2D/SliderComponents/slider/Green/slider_base_curved_Green.png" id="5_qnt8i"]
+[ext_resource type="Texture2D" uid="uid://fjrkcgtgi4g3" path="res://assets/The Hostage - main game/2D/SliderComponents/slider/Green/slider_expandable_Green.png" id="6_jhxgy"]
+[ext_resource type="Texture2D" uid="uid://cu7o0xu6vgvy3" path="res://assets/The Hostage - main game/2D/SliderComponents/button/button_Green.png" id="7_h1rjv"]
+[ext_resource type="Texture2D" uid="uid://bvfhiv7xt5hvd" path="res://assets/The Hostage - main game/2D/SliderComponents/slider/Purple/slider_base_curved_Purple.png" id="8_qmw75"]
+[ext_resource type="Texture2D" uid="uid://lh1oxb33qob8" path="res://assets/The Hostage - main game/2D/SliderComponents/slider/Purple/slider_expandable_Purple.png" id="9_86yui"]
+[ext_resource type="Texture2D" uid="uid://dugydhpcxkmie" path="res://assets/The Hostage - main game/2D/SliderComponents/button/button_Purple.png" id="10_d20a8"]
+[ext_resource type="Texture2D" uid="uid://dhl6tptvbkwyv" path="res://assets/The Hostage - main game/2D/SliderComponents/slider/Red/slider_base_curved_Red.png" id="11_6ligo"]
+[ext_resource type="Texture2D" uid="uid://crrjdn17hg2ov" path="res://assets/The Hostage - main game/2D/SliderComponents/slider/Red/slider_expandable_Red.png" id="12_jo2mt"]
+[ext_resource type="Texture2D" uid="uid://kwwah2suhhcq" path="res://assets/The Hostage - main game/2D/SliderComponents/slider/Blue/slider_base_ curved_Blue.png" id="13_t7o2h"]
+[ext_resource type="Texture2D" uid="uid://duv3v7ee3sge8" path="res://assets/The Hostage - main game/2D/SliderComponents/slider/Blue/slider_expandable_Blue.png" id="14_olbsy"]
 
 [node name="All Sliders" type="Control"]
 layout_mode = 3
@@ -84,7 +84,6 @@ color = Color(1, 1, 1, 0)
 position = Vector2(-180, 68)
 
 [node name="TextureProgressBar" parent="GridContainer/ColorRect4/Slider_Button/Control" index="1"]
-value = 100.0
 texture_under = ExtResource("8_qmw75")
 texture_progress = ExtResource("9_86yui")
 

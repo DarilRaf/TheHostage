@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cewg1ny5a1guv"
-path="res://.godot/imported/inside cover.png-3ff158300bab84666bb70c7044344af2.ctex"
+path="res://.godot/imported/inside cover.png-629ebf6f85b63e4eb98e80128b945e75.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/The Hostage - main game/2D/diary/inside cover.png"
-dest_files=["res://.godot/imported/inside cover.png-3ff158300bab84666bb70c7044344af2.ctex"]
+source_file="res://assets/The Hostage - main game/2D/Diary/inside cover.png"
+dest_files=["res://.godot/imported/inside cover.png-629ebf6f85b63e4eb98e80128b945e75.ctex"]
 
 [params]
 

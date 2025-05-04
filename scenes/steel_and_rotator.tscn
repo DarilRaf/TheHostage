@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://iwv0xbgrb0cn"]
 
-[ext_resource type="Texture2D" uid="uid://dio578fbnudja" path="res://assets/The Hostage - main game/2D/steel_component/steel_base.png" id="1_kiyoj"]
+[ext_resource type="Texture2D" uid="uid://dio578fbnudja" path="res://assets/The Hostage - main game/2D/SteelComponent/steel_base.png" id="1_kiyoj"]
 [ext_resource type="PackedScene" uid="uid://g0gluywa44j2" path="res://scenes/rotator.tscn" id="2_s4whi"]
 
 [node name="Steel_and_Rotator" type="Control"]

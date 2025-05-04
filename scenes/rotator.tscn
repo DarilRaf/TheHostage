@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://g0gluywa44j2"]
 
-[ext_resource type="Texture2D" uid="uid://ctgxqdnq4qmi" path="res://assets/The Hostage - main game/2D/steel_component/rotator_frame1.png" id="1_ouf1y"]
-[ext_resource type="Texture2D" uid="uid://bxqda2bt1r0mv" path="res://assets/The Hostage - main game/2D/steel_component/rotator_frame2.png" id="2_0hxk8"]
-[ext_resource type="Texture2D" uid="uid://18w0jdix8a75" path="res://assets/The Hostage - main game/2D/steel_component/rotator_frame3.png" id="3_lt7yx"]
+[ext_resource type="Texture2D" uid="uid://ctgxqdnq4qmi" path="res://assets/The Hostage - main game/2D/SteelComponent/rotator_frame1.png" id="1_ouf1y"]
+[ext_resource type="Texture2D" uid="uid://bxqda2bt1r0mv" path="res://assets/The Hostage - main game/2D/SteelComponent/rotator_frame2.png" id="2_0hxk8"]
+[ext_resource type="Texture2D" uid="uid://18w0jdix8a75" path="res://assets/The Hostage - main game/2D/SteelComponent/rotator_frame3.png" id="3_lt7yx"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_v2qf2"]
 animations = [{

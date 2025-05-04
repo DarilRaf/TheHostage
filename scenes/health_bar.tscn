@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bjlx36o8fc4y6"]
 
-[ext_resource type="Texture2D" uid="uid://crl1ipytp8pam" path="res://assets/The Hostage - main game/2D/healthgauge/background_inner_gauge.png" id="1_vu05s"]
-[ext_resource type="Texture2D" uid="uid://dbfp06qm0vp2k" path="res://assets/The Hostage - main game/2D/healthgauge/main_gauge.png" id="2_yf4fb"]
+[ext_resource type="Texture2D" uid="uid://crl1ipytp8pam" path="res://assets/The Hostage - main game/2D/HealthGaugeOld/background_inner_gauge.png" id="1_vu05s"]
+[ext_resource type="Texture2D" uid="uid://dbfp06qm0vp2k" path="res://assets/The Hostage - main game/2D/HealthGaugeOld/main_gauge.png" id="2_yf4fb"]
 
 [node name="HealthBar" type="Control"]
 layout_mode = 3

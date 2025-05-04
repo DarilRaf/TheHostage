@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://d36ge2os60wcn"]
 
-[ext_resource type="Texture2D" uid="uid://ben4lr7fsuegu" path="res://assets/The Hostage - main game/2D/inventory/inventory bg.png" id="1_w3ed6"]
+[ext_resource type="Texture2D" uid="uid://ben4lr7fsuegu" path="res://assets/The Hostage - main game/2D/Inventory/inventory bg.png" id="1_w3ed6"]
 [ext_resource type="PackedScene" uid="uid://dv7rhps4gcrd0" path="res://scenes/inventory_slot.tscn" id="2_gcojh"]
-[ext_resource type="Texture2D" uid="uid://6v50oy0lh2ks" path="res://assets/The Hostage - main game/2D/recoveritem/bread.png" id="3_3ky1n"]
-[ext_resource type="Texture2D" uid="uid://kbkk3f48yx56" path="res://assets/The Hostage - main game/2D/inventoryitem/rusty scissors.png" id="4_obvqf"]
-[ext_resource type="Texture2D" uid="uid://c6kd2ckhvrjb8" path="res://assets/The Hostage - main game/2D/recoveritem/medical_kit.png" id="5_uvlt7"]
+[ext_resource type="Texture2D" uid="uid://6v50oy0lh2ks" path="res://assets/The Hostage - main game/2D/RecoveryItem/bread.png" id="3_3ky1n"]
+[ext_resource type="Texture2D" uid="uid://kbkk3f48yx56" path="res://assets/The Hostage - main game/2D/InventoryItem/rusty scissors.png" id="4_obvqf"]
+[ext_resource type="Texture2D" uid="uid://c6kd2ckhvrjb8" path="res://assets/The Hostage - main game/2D/RecoveryItem/medical_kit.png" id="5_uvlt7"]
 
 [node name="Inventory" type="Control"]
 layout_mode = 3

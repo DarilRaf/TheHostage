@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dv7rhps4gcrd0"]
 
-[ext_resource type="Texture2D" uid="uid://bcecuv348a63h" path="res://assets/The Hostage - main game/2D/inventory/icon small.png" id="1_awr8q"]
+[ext_resource type="Texture2D" uid="uid://bcecuv348a63h" path="res://assets/The Hostage - main game/2D/Inventory/icon small.png" id="1_awr8q"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w8s6n"]
 size = Vector2(62, 61)

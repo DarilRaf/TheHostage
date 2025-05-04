@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c8wek66aganxr"
-path="res://.godot/imported/inventory full.png-feb336e2430d0f12cc5097d5981e7218.ctex"
+path="res://.godot/imported/inventory full.png-8076f1df11964c26e5b8eca0622d918b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/The Hostage - main game/2D/inventory/inventory full.png"
-dest_files=["res://.godot/imported/inventory full.png-feb336e2430d0f12cc5097d5981e7218.ctex"]
+source_file="res://assets/The Hostage - main game/2D/Inventory/inventory full.png"
+dest_files=["res://.godot/imported/inventory full.png-8076f1df11964c26e5b8eca0622d918b.ctex"]
 
 [params]
 

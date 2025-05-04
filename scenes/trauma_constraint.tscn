@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://ciwaciua4knei"]
 
-[ext_resource type="Texture2D" uid="uid://o6nyxfkqw5mb" path="res://assets/The Hostage - main game/2D/constraint_trauma/sanity_reduced_constraint.png" id="1_2uu10"]
-[ext_resource type="Texture2D" uid="uid://dl6hpjikndb0v" path="res://assets/The Hostage - main game/2D/constraint_trauma/sanity_reduced_constraint_lowSaturation.png" id="2_3m2jh"]
+[ext_resource type="Texture2D" uid="uid://o6nyxfkqw5mb" path="res://assets/The Hostage - main game/2D/ConstraintTrauma/sanity_reduced_constraint.png" id="1_2uu10"]
+[ext_resource type="Texture2D" uid="uid://dl6hpjikndb0v" path="res://assets/The Hostage - main game/2D/ConstraintTrauma/sanity_reduced_constraint_lowSaturation.png" id="2_3m2jh"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_avaxa"]
 animations = [{
