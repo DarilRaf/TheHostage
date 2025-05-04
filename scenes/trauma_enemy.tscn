@@ -100,6 +100,7 @@ animations = [{
 [node name="TraumaEnemy" type="Node2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(599, 573)
 sprite_frames = SubResource("SpriteFrames_ya151")
-animation = &"insanity_2"
-frame_progress = 0.994876
+animation = &"knock"
+frame_progress = 0.503019
