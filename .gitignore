@@ -3,3 +3,4 @@
 *.clip
 *.blend
 /android/
+.vscode/
