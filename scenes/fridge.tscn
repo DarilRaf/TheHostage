@@ -1,0 +1,53 @@
+[gd_scene load_steps=5 format=3 uid="uid://cfeaytk5fp7lc"]
+
+[ext_resource type="Texture2D" uid="uid://dew65t5jkwrfv" path="res://assets/The Hostage - main game/2D/Fridge/Background.png" id="1_ipvyg"]
+[ext_resource type="PackedScene" uid="uid://bbp4yperyjbx1" path="res://scenes/remote_ice.tscn" id="2_buvrw"]
+[ext_resource type="Texture2D" uid="uid://bvcn4e3rlul7r" path="res://assets/The Hostage - main game/2D/Fridge/Effect_Ice.png" id="2_husjh"]
+[ext_resource type="PackedScene" uid="uid://yfubwj8cn0c0" path="res://scenes/battery_ice.tscn" id="3_husjh"]
+
+[node name="Fridge" type="Control"]
+clip_contents = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -350.0
+offset_right = 250.0
+offset_bottom = 350.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Background" type="Sprite2D" parent="VBoxContainer"]
+position = Vector2(259, 350)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_ipvyg")
+
+[node name="EffectIce" type="Sprite2D" parent="VBoxContainer"]
+position = Vector2(263, 355)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_husjh")
+
+[node name="ColorRect" type="ColorRect" parent="VBoxContainer"]
+visible = false
+custom_minimum_size = Vector2(500, 350)
+layout_mode = 2
+
+[node name="RemoteIce" parent="." instance=ExtResource("2_buvrw")]
+position = Vector2(746, 376)
+scale = Vector2(0.75, 0.75)
+
+[node name="BatteryIce" parent="." instance=ExtResource("3_husjh")]
+position = Vector2(511, 364)
+scale = Vector2(0.75, 0.75)
