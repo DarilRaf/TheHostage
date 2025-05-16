@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://bjlx36o8fc4y6"]
 
-[ext_resource type="Texture2D" uid="uid://du7xxemvq8cj5" path="res://assets/The Hostage - main game/2D/HealthSanityGauge/new_gauge_empty.png" id="1_6opq1"]
-[ext_resource type="Texture2D" uid="uid://c8r8a64ami1kg" path="res://assets/The Hostage - main game/2D/HealthSanityGauge/new_gauge_health.png" id="2_tujlf"]
-[ext_resource type="Texture2D" uid="uid://curr40s3d1eji" path="res://assets/The Hostage - main game/2D/HealthSanityGauge/new_gauge_sanity.png" id="3_5oo0i"]
-[ext_resource type="Texture2D" uid="uid://37r7fo40pji5" path="res://assets/The Hostage - main game/2D/HealthSanityGauge/new_gauge_overlay_sanity.png" id="3_tujlf"]
+[ext_resource type="Texture2D" uid="uid://du7xxemvq8cj5" path="res://assets/The Hostage - main game/2D/HealthSanityGauge/new_gauge_empty.png" id="1_y2esd"]
+[ext_resource type="Texture2D" uid="uid://c8r8a64ami1kg" path="res://assets/The Hostage - main game/2D/HealthSanityGauge/new_gauge_health.png" id="2_xbqml"]
+[ext_resource type="Texture2D" uid="uid://37r7fo40pji5" path="res://assets/The Hostage - main game/2D/HealthSanityGauge/new_gauge_overlay_sanity.png" id="3_gjhn7"]
+[ext_resource type="Texture2D" uid="uid://curr40s3d1eji" path="res://assets/The Hostage - main game/2D/HealthSanityGauge/new_gauge_sanity.png" id="4_iveu4"]
 
 [node name="HealthSanityBar" type="Control"]
 layout_mode = 3
@@ -18,13 +18,13 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 value = 100.0
-texture_under = ExtResource("1_6opq1")
-texture_progress = ExtResource("2_tujlf")
+texture_under = ExtResource("1_y2esd")
+texture_progress = ExtResource("2_xbqml")
 
 [node name="Sanity Texture" type="TextureProgressBar" parent="."]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 value = 100.0
-texture_over = ExtResource("3_tujlf")
-texture_progress = ExtResource("3_5oo0i")
+texture_over = ExtResource("3_gjhn7")
+texture_progress = ExtResource("4_iveu4")
