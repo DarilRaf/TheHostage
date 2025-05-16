@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://yfubwj8cn0c0"]
+[gd_scene load_steps=4 format=3 uid="uid://yfubwj8cn0c0"]
 
 [ext_resource type="Texture2D" uid="uid://b28pb1325nxas" path="res://assets/The Hostage - main game/2D/Fridge/Battery_Ice.png" id="1_enjmf"]
+[ext_resource type="Script" uid="uid://ba0wwavdag8x7" path="res://scripts/battery_ice.gd" id="1_q672a"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_buvrw"]
 size = Vector2(280.125, 271.25)
 
 [node name="BatteryIce" type="Area2D"]
+script = ExtResource("1_q672a")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(151, -67)
@@ -14,3 +16,5 @@ texture = ExtResource("1_enjmf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_buvrw")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
